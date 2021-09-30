@@ -4,8 +4,8 @@ Wants=db-container-backup.timer
 
 [Service]
 Type=simple
-ExecStart=sh db-container-backup.sh
-User=xcad
+ExecStart=sh /root/db-backups/scripts/db-container-backup.sh
+User=root
 
 [Install]
 WantedBy=default.target
