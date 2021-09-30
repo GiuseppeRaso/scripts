@@ -2,7 +2,7 @@
 Description=DB Container Backup Daily Job
 
 [Timer]
-OnCalendar=daily
+OnCalendar=*-*-* 11:00:00,23:00:00,
 Persistent=true
 Unit=db-container-backup.service
 
