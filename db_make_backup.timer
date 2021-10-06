@@ -1,0 +1,11 @@
+[Unit]
+Description=DB Container Backup Daily Job
+
+[Timer]
+OnCalendar=*-*-* 09:00:00
+OnCalendar=*-*-* 21:00:00
+Persistent=true
+Unit=db_make_backup.service
+
+[Install]
+WantedBy=timers.target

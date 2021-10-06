@@ -1,0 +1,11 @@
+[Unit]
+Description=DB Container Backup Script
+Wants=db_make_backup.timer
+
+[Service]
+Type=simple
+ExecStart=sh /root/db_make_backup/scripts/db_make_backup.sh
+User=root
+
+[Install]
+WantedBy=default.target
