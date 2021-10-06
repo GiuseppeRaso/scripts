@@ -1,2 +1,2 @@
-# scripts
-▶️ Bash / PowerShell and Python scripts for various projects
+# mysql / mariadb backup
+▶️ Shell scripts to create mysql dumps of databases inside docker containers
